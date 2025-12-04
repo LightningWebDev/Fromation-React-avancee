@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "MacBook Pro M3",
+      "price": 2499,
+      "category": "Laptops",
+      "description": "Puissant ordinateur portable avec puce M3",
+      "inStock": true,
+      "image": "https://picsum.photos/seed/macbook/400/300"
+    },
+    {
+      "id": 2,
+      "name": "iPhone 15 Pro",
+      "price": 1199,
+      "category": "Smartphones",
+      "description": "Le dernier iPhone avec puce A17 Pro",
+      "inStock": true,
+      "image": "https://picsum.photos/seed/iphone/400/300"
+    },
+    {
+      "id": 3,
+      "name": "AirPods Pro",
+      "price": 240,
+      "category": "Audio",
+      "description": "Écouteurs sans fil avec réduction de bruit",
+      "inStock": false,
+      "image": "https://picsum.photos/seed/airpods/400/300"
+    },
+    {
+      "id": 4,
+      "name": "iPad Air",
+      "price": 599,
+      "category": "Tablets",
+      "description": "Tablette légère et puissante",
+      "inStock": true,
+      "image": "https://picsum.photos/seed/ipad/400/300"
+    },
+    {
+      "id": 5,
+      "name": "Apple Watch Series 9",
+      "price": 429,
+      "category": "Wearables",
+      "description": "Montre connectée avec suivi de santé avancé",
+      "inStock": true,
+      "image": "https://picsum.photos/seed/watch/400/300"
+    }
+  ]
+}
