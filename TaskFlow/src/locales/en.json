@@ -1,0 +1,72 @@
+{
+  "common": {
+    "appName": "TaskFlow",
+    "tagline": "Simplified task management",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "backToHome": "← Back to home"
+  },
+  "nav": {
+    "home": "Home"
+  },
+  "tasks": {
+    "title": "My Tasks",
+    "count": "{{count}} task(s)",
+    "newTask": "➕ New Task",
+    "viewDetails": "view details",
+    "taskDetails": "task details",
+    "noTasks": "No Tasks yet",
+    "noTaskHint": "Click \"New Task\" to get started",
+    "notFound": "Task not found",
+    "notFoundDesc": "The task with ID \"{{id}}\" does not exist.",
+    "createdAt": "Created on {{date}}"
+  },
+  "form": {
+    "createTitle": "Create a new task",
+    "titleLabel": "Title",
+    "titlePlaceholder": "E.g.: Learn React hooks",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Describe the task...",
+    "statusLabel": "Status",
+    "priorityLabel": "Priority",
+    "addTask": "Add task",
+    "adding": "Adding..."
+  },
+  "status": {
+    "todo": "To do",
+    "in-progress": "In progress",
+    "done": "Done"
+  },
+  "priority": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High"
+  },
+  "stats": {
+    "todo": "To do",
+    "inProgress": "In progress",
+    "done": "Done"
+  },
+  "validation": {
+    "titleRequired": "Title is required",
+    "titleMin": "Title must be at least 3 characters",
+    "titleMax": "Title cannot exceed 100 characters",
+    "descriptionMax": "Description cannot exceed 5OO characters",
+    "invalidStatus": "Invalid status",
+    "invalidPriority": "Invalid priority"
+  },
+  "theme": {
+    "switchTo": "Switch to {{theme}} theme",
+    "light": "light",
+    "dark": "dark"
+  },
+  "language": {
+    "select": "Language",
+    "fr": "Francais",
+    "en": "English"
+  }
+}

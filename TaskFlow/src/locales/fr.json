@@ -1,0 +1,72 @@
+{
+  "common": {
+    "appName": "TaskFlow",
+    "tagline": "Gestion de tâches simplifiée",
+    "loading": "Chargement...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "back": "Retour",
+    "backToHome": "← Retour à l'accueil"
+  },
+  "nav": {
+    "home": "Accueil"
+  },
+  "tasks": {
+    "title": "Mes Taches",
+    "count": "{{count}} taches(s)",
+    "newTask": "➕ Nouvelle Tache",
+    "viewDetails": "voir détails",
+    "taskDetails": "Détails de la tache",
+    "noTasks": "Aucune tache pour le moment",
+    "noTaskHint": "Cliquez sur \"Nouvelle Tache\" pour commencer",
+    "notFound": "Tache non trouvée",
+    "notFoundDesc": "La tache avec l'ID \"{{id}}\" n'existe pas.",
+    "createdAt": "Créer le {{date}}"
+  },
+  "form": {
+    "createTitle": "Créer une nouvelle tache",
+    "titleLabel": "Titre",
+    "titlePlaceholder": "Ex: Apprendre les hooks React",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Décrivez la tache...",
+    "statusLabel": "Status",
+    "priorityLabel": "Priorité",
+    "addTask": "Ajouter la tache",
+    "adding": "Ajout..."
+  },
+  "status": {
+    "todo": "A faire",
+    "in-progress": "En cours",
+    "done": "Terminé"
+  },
+  "priority": {
+    "low": "Basse",
+    "medium": "En cours",
+    "high": "Haute"
+  },
+  "stats": {
+    "todo": "A faire",
+    "inProgress": "En cours",
+    "done": "Terminé"
+  },
+  "validation": {
+    "titleRequired": "Le titre est requis",
+    "titleMin": "Le titre doit contenir au moins 3 caractères",
+    "titleMax": "Le titre ne peut pas dépasser 1OO caractères",
+    "descriptionMax": "La description ne peut pas dépasser 5OO caractères",
+    "invalidStatus": "Status invalide",
+    "invalidPriority": "Priorité invalide"
+  },
+  "theme": {
+    "switchTo": "Basculer vers le thème {{theme}}",
+    "light": "claire",
+    "dark": "sombre"
+  },
+  "language": {
+    "select": "Langue",
+    "fr": "Francais",
+    "en": "English"
+  }
+}

@@ -1,0 +1,28 @@
+.language-selector {
+  display: flex;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 4px;
+  border-radius: var(--radius-md);
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.lang-btn.active {
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}

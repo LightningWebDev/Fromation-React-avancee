@@ -1,0 +1,42 @@
+/* Wrapper inside the button */
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+}
+
+/* Base icon state */
+.icon {
+  position: absolute;
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0;
+  transform: translateY(25px);
+  transition: transform 0.7s ease, opacity 0.35s ease;
+}
+
+/* Active emoji appears smoothly */
+.icon.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.theme-toggle {
+  cursor: pointer;
+}
+
+/* Outgoing emoji moves upward */
+.icon.exit {
+  opacity: 0;
+  transform: translateY(-25px);
+}
+
+/* Prevent micro-artifacts */
+.icon:not(.active):not(.exit) {
+  opacity: 0;
+  transform: translateY(25px);
+}

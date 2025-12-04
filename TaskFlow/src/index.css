@@ -1,0 +1,172 @@
+/* ==========================================
+   CSS Variables - Theme System
+   ========================================== */
+
+:root {
+  /* Light Theme (default) */
+  --bg-primary: #f5f7fa;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-header: #ffffff;
+  --bg-input: #ffffff;
+  --bg-hover: #f0f4f8;
+
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --text-muted: #a0aec0;
+
+  --border-color: #e2e8f0;
+
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --primary-shadow: rgba(79, 70, 229, 0.2);
+
+  --success-color: #22c55e;
+  --success-hover: #16a34a;
+
+  --warning-color: #f59e0b;
+  --warning-hover: #d97706;
+
+  --danger-color: #ef4444;
+  --danger-hover: #dc2626;
+
+  /* Status colors - Light */
+  --status-todo-bg: #fef3c7;
+  --status-todo-text: #92400e;
+  --status-progress-bg: #dbeafe;
+  --status-progress-text: #1e40af;
+  --status-done-bg: #dcfce7;
+  --status-done-text: #166534;
+
+  /* Shadows - Light */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #1e293b;
+  --bg-header: #1e293b;
+  --bg-input: #334155;
+  --bg-hover: #334155;
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+
+  --border-color: #334155;
+
+  --primary-color: #818cf8;
+  --primary-hover: #6366f1;
+  --primary-shadow: rgba(129, 140, 248, 0.3);
+
+  --success-color: #4ade80;
+  --success-hover: #22c55e;
+
+  --warning-color: #fbbf24;
+  --warning-hover: #f59e0b;
+
+  --danger-color: #f87171;
+  --danger-hover: #ef4444;
+
+  /* Status colors - Dark */
+  --status-todo-bg: rgba(251, 191, 36, 0.2);
+  --status-todo-text: #fbbf24;
+  --status-progress-bg: rgba(96, 165, 250, 0.2);
+  --status-progress-text: #60a5fa;
+  --status-done-bg: rgba(74, 222, 128, 0.2);
+  --status-done-text: #4ade80;
+
+  /* Shadows - Dark */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================
+   Global Styles
+   ========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth transitions for theme changes */
+*,
+*::before,
+*::after {
+  transition: background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Don't transition text color changes to avoid flickering */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+label {
+  transition: color 0.15s ease;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
